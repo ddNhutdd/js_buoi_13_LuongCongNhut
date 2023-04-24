@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai tap js</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card mb-5">
+        <div class="card-header">
+            Bài tập 1
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Tính tiền lương nhân viên</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="inputB1LuongMotNgay" class="col-sm-2 col-form-label">Nhập lương một ngày</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB1LuongMotNgay">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputB1SoNgayLam" class="col-sm-2 col-form-label">Số ngày làm</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB1SoNgayLam">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="button" class="btn btn-primary" id="btnB1TinhLuong">Tính lương</button>
+                    </div>
+                </div>
+                <div id="alertB1Result" class="alert alert-danger" role="alert">
+                    0
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card mb-5">
+        <div class="card-header">
+            Bài tập 2
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Tính giá trị trung bình</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="inputB2So1" class="col-sm-2 col-form-label">Nhập số thứ nhất</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB2So1">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputB2So2" class="col-sm-2 col-form-label">Nhập số thứ hai</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB2So2">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputB2So3" class="col-sm-2 col-form-label">Nhập số thứ ba</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB2So3">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputB2So4" class="col-sm-2 col-form-label">Nhập số thứ tư</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB2So4">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputB2So5" class="col-sm-2 col-form-label">Nhập số thứ năm</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB2So5">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="button" class="btn btn-primary" id="btnB2TB">Tính trung bình</button>
+                    </div>
+                </div>
+                <div id="alertB2Result" class="alert alert-danger" role="alert">
+                    0
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card mb-5">
+        <div class="card-header">
+            Bài tập 3
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Quy đổi tiền</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="inputB3SoUsd" class="col-sm-2 col-form-label">Nhập số USD</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB3SoUsd">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type='button' class="btn btn-primary" id="btnB3Tinh">Đổi</button>
+                    </div>
+                </div>
+                <div id="alertB3Result" class="alert alert-danger" role="alert">
+                    0
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card mb-5">
+        <div class="card-header">
+            Bài tập 4
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Tính diện tích, chu vi</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="inputB4ChieuDai" class="col-sm-2 col-form-label">Nhập chiều dài</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB4ChieuDai">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputB4ChieuRong" class="col-sm-2 col-form-label">Nhập chiều rộng</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB4ChieuRong">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="button" class="btn btn-primary" id="btnB4Tinh">Tính</button>
+                    </div>
+                </div>
+                <div id="alertB4Result" class="alert alert-danger" role="alert">
+                    0
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="card mb-5">
+        <div class="card-header">
+            Bài tập 5
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">Tính tổng hai kí số</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="inputB5So" class="col-sm-2 col-form-label">Nhập số có hai chữ số</label>
+                    <div class="col-sm-10">
+                        <input type="number" class="form-control" id="inputB5So">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="button" class="btn btn-primary" id="btnB5Tinh">Tính tổng kí số</button>
+                    </div>
+                </div>
+                <div id="alertB5Result" class="alert alert-danger" role="alert">
+                    0
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- jquery.slim -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <!-- main -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
